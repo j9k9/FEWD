@@ -1,0 +1,88 @@
+nav {
+    text-align: center;
+}
+a {
+    color: #000;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    margin: 5px;
+}
+#active {
+    font-style: italic;
+    text-decoration: none;
+    ;
+}
+.profile {
+    float: right;
+    margin-left: 30px;
+}
+img {
+    border: 1px solid #000;
+    padding: 5px;
+}
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 35px;
+}
+h2 {
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    font-size: 19px;
+    display: inline-block;
+}
+h3 {
+    font-family: sans-serif;
+    font-size: 17px;
+}
+h4 {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    font-size: 15px;
+    margin-top: 40px;
+}
+h5 {
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+li p {
+    margin-top: 3px;
+}
+p {
+    font-family: georgia;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+.container {
+    border: solid #000;
+    border-width: 5px 0;
+    width: 830px;
+    margin: auto;
+    padding: 30px 30px;
+    overflow: hidden;
+}
+.top {
+    margin-bottom: 50px;
+}
+.bottom {
+    margin-top: 50px;
+}
+.social {
+    display: inline-block;
+    width: 535px;
+    padding-left: 0;
+    text-align: center;
+}
+.social li {
+    display: inline;
+    padding: 5px;
+}
+.emphasis {
+    font-style: italic;
+    font-weight: bold;
+}
