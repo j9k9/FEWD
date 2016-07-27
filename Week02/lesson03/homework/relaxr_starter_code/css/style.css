@@ -111,7 +111,7 @@ header {
 }
 
 .testimonialinner{
-  width: 350px;
+  width: 375px;
   margin: auto;
   color: #fff;
   text-align: center;
@@ -198,7 +198,7 @@ li{
 
 .testimonialinner p {
  font-size: 18px;
- font-weight: 300;
+ font-weight: 600;
  font-style: italic;
 }
 
