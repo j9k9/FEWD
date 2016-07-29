@@ -1,0 +1,45 @@
+body{
+  font-family: sans-serif;
+  line-height: 1.5;
+  margin: 30px;
+}
+/*#notification {
+  background-color: #eee;
+  padding: 10px;
+  border: 1px solid #ccc;
+}*/
+
+
+
+.message {
+  background-color: #ffe;
+  padding: 10px;
+  border: 1px solid #ccb;
+  margin: 10px 0;
+
+}
+
+.notification {
+  background-color: #eee;
+  border-color: #ccc;
+}
+
+.error{
+  background-color: #fee;
+  border-color: #c66;
+}
+
+.success{
+  background-color: #d5f5cb;
+  border-color: #7ABA65;
+
+}
+
+/*pseudo classes helpful to stop writing loads of classes.
+can wrap in outer element
+in code example
+div.message:first-child targets the top div.*/
+
+div.message:first-child{
+  background-color: #ff3;
+}
