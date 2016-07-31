@@ -1,4 +1,4 @@
-/*Layout one*/
+/*Layout two*/
 
 /* Box Model Hack */
 * {
@@ -32,25 +32,36 @@ body {
   margin: 0 auto;
 }
 
-header, main, aside, footer{
+.block{
   background-color: #ccc;
   border: 1px solid #7a8786;
-  margin:5px;
 }
 
-header, footer {
+header, article, aside, footer{
+  margin-bottom:20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+header{
   height: 150px;
 }
 
-main, aside {
-  height: 600px;
-  display: inline-block;
+aside{
+  height: 500px;
+  width: 220px;
 }
 
-main {
-  width: 690px;
+article{
+  height: 500px;
+  width: 500px;
 }
 
-aside {
-  width: 290px;
+.left, .middle , .right{
+  float:left;
+}
+
+
+footer {
+ height: 150px;
 }
