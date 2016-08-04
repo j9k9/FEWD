@@ -1,0 +1,223 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+ box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+ clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  color: #033048;
+  background-color: #f0efef;
+  font-family: Open Sans, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+.container {
+  width: 960px;
+  margin: 0 auto;
+  font-size:0;
+}
+
+header .container, main, aside {
+  font-size: 24px;
+}
+
+header .container {
+  padding-top: 35px;
+}
+
+header {
+  height:100px;
+  background-color: #033048
+}
+
+nav a {
+  color:#f9e42e;
+  font-weight: 600;
+  display:inline-block;
+  text-decoration: none;
+  padding-left: 30px;
+}
+
+nav {
+  float:right;
+}
+
+main, aside {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+
+main {
+  width: 700px;
+  margin-right: 20px;
+
+}
+
+aside {
+  width: 240px;
+}
+
+article, img, ul {
+  margin-bottom: 30px;
+}
+
+img{
+  margin-top: 30px;
+}
+
+.signup {
+  background-color: #f9e42e;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+footer {
+  background-color: #121212;
+  padding-top: 50px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.logo {
+  font-weight: 800;
+  font-size: 24px;
+  color: #fff;
+  display: inline-block;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+
+li {
+  font-size: 24px;
+}
+
+aside p, aside a {
+  font-size: 22px;
+}
+
+a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #033048;
+}
+
+article a {
+  float: right;
+  margin-bottom: 30px;
+}
+
+article p {
+  color: #606161;
+  margin-bottom: 50px;
+}
+
+hr {
+height: 1px;
+color: #121212;
+background-color: #121212;
+border: none;
+clear: both;
+}
+
+.dropcap {
+  float: left;
+  line-height: 0.75;
+  font-size:75px;
+  font-weight: 600;
+  padding: 5px 10px 5px 0;
+}
+
+.button {
+  display: inline-block;
+  font-weight: 800;
+  padding: 10px 40px;
+  text-decoration: none;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.signup .button {
+  font-size: 12px;
+  color: #fff;
+  background-color: #033048;
+}
+
+footer .logo {
+color: #f9e42e;
+}
+
+footer p {
+  font-weight: 600;
+  color: #fff;
+}
+
+.social {
+  padding: 50px;
+}
+
+.social a {
+  padding: 15px;
+}
