@@ -57,6 +57,7 @@ header {
   height: 100px;
   background-color: #000;
   border-bottom: 6px solid yellow;
+  margin-bottom: 10px;
 }
 
 h1 {
@@ -95,7 +96,6 @@ nav a:hover {
 
 .row {
   padding-left: 30px;
-  border: 1px solid red;
 }
 
 .column {
@@ -105,17 +105,14 @@ nav a:hover {
   background-color: #fff;
   margin-right: 10px;
   margin-bottom: 10px;
-  border: 1px solid red;
 }
 
 .column:first-child {
   margin-left: -30px;
-  border: 1px solid red;
 }
 
 .column:last-child {
   margin-right: 0;
-  border: 1px solid red;
 }
 
 footer {
