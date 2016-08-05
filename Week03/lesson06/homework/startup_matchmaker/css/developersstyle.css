@@ -33,6 +33,10 @@ Developer @GA in NYC
 /* BASE STYLES
 /*******************************************/
 
+html {
+  background-color: #bebebe;
+}
+
 body {
   line-height: 1.5;
   font-family: arial, helvetica, sans-serif;
@@ -89,7 +93,30 @@ nav a:hover {
   background-color: grey;
 }
 
+.row {
+  padding-left: 30px;
+  border: 1px solid red;
+}
 
+.column {
+  width: 25%;
+  float: left;
+  padding: 30px;
+  background-color: #fff;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: 1px solid red;
+}
+
+.column:first-child {
+  margin-left: -30px;
+  border: 1px solid red;
+}
+
+.column:last-child {
+  margin-right: 0;
+  border: 1px solid red;
+}
 
 footer {
   height: 75px;
@@ -144,6 +171,5 @@ p {
 }
 
 footer p {
-
   color: #fff;
 }
