@@ -94,6 +94,9 @@ nav a:hover {
   height: 600px;
   background: url(../images/coworking.jpg) no-repeat center bottom;
   background-size: cover;
+  -webkit-box-shadow: inset 0px 5px 5px 0px rgba(0,0,0,0.52);
+  -moz-box-shadow: inset 0px 5px 5px 0px rgba(0,0,0,0.52);
+  box-shadow: inset 0px 5px 5px 0px rgba(0,0,0,0.52);
 }
 
 .heroImage .container {
@@ -159,6 +162,9 @@ p {
 .heroImage .column {
   background: rgba(255, 255, 255, 0.5);
   border: 1px solid #666;
+  -webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.25);
+  -moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.25);
+  box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.25);
 }
 
 
