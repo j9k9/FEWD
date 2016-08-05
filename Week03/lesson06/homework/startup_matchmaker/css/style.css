@@ -172,7 +172,6 @@ p {
 
 .button {
   display: block;
-  width: 100%;
   -webkit-border-radius: 5;
   -moz-border-radius: 5;
   border-radius: 5px;
