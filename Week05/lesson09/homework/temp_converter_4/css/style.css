@@ -1,0 +1,19 @@
+.blue {
+  transition: background-color 0.8s ease;
+  background-color: blue;
+}
+
+.gray {
+  transition: background-color 0.8s ease;
+  background-color: gray;
+}
+
+.orange {
+  transition: background-color 0.8s ease;
+  background-color: orange;
+}
+
+.red {
+  transition: background-color 0.8s ease;
+  background-color: red;
+}
