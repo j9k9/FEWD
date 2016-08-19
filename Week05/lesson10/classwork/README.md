@@ -1,3 +1,7 @@
 ##Lesson 10 Classwork
 
-If you'd like, write a description or notes here
+JQUERY
+
+Make sure your JQuery file is loaded before JS file in HTML.
+
+$ is entry point   

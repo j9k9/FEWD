@@ -1,4 +1,4 @@
-function convert() {
+ function convert() {
 
 //grab inputted data first
   var c = document.querySelector("#cInput").value;
@@ -56,7 +56,7 @@ function switchBackground(thing){
     switchBackground("red");
   }
 
-  
+
 
 
 }
