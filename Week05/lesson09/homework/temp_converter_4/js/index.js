@@ -4,6 +4,8 @@
   var c = document.querySelector("#cInput").value;
   var f = document.querySelector("#fInput").value;
 
+  console.log(c)
+
 //then declare conversion and scale variables
   var conversion, scale;
 
@@ -59,7 +61,7 @@ function switchBackground(thing){
 
 
 
-}
+};
 
 
 document.querySelector("#submit").onclick = convert;

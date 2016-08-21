@@ -23,8 +23,7 @@
 //   var c = (f - 32) * 5 / 9;
 //
 //
-//   c = parseInt(c);
-//   f = parseInt(f);
+//
 //
 //
 //   document.querySelector("#result").innerHTML = ("Result: ") + c + (" \u2103");
