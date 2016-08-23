@@ -34,4 +34,6 @@ function changeBG(event) {
 
 }
 
+// $("form").submit(changeBG);
+
 $("#submit-btn").click(changeBG);

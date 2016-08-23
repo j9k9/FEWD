@@ -1,6 +1,7 @@
 var total = 0;
 total = parseFloat(total);
 
+
 $("#entry").submit(add);
 
 function add (event){
@@ -8,15 +9,19 @@ function add (event){
   event.preventDefault();
 
   entry = $("#newEntry").val();
-  entry = parseFloat(entry);
+
+  entry = parseFloat(entry).toFixed(2);
 
   $("ul.list").append("<li>" + "&#36;" + entry + "</li>");
 
-  total = total + entry;
+  total = +total + +entry;
 
-  $("#total").html(("&#36;" + total));
+  $("#total").html(("&#36;" + total.toFixed(2)));
 
+  $("#newEntry").val("");
 
- $("#newEntry").val("");
+  // if (entry){
+  //
+  // };
 
 };

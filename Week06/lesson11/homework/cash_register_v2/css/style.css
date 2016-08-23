@@ -75,10 +75,11 @@ li {
   text-align: right;
 }
 
-.error-message{
-  margin-top: 20px;
+.error-message {
   color: red;
   border: 1px solid red;
+  padding: 10px;
+  margin-top: 20px;
   text-align: center;
   display: none;
 }

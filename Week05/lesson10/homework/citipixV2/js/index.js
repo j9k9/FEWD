@@ -1,6 +1,8 @@
-function changeBG(event) {
+function changeBG(e) {
+  console.log("triggered");
+  e.preventDefault();
 
-  event.preventDefault();
+  console.log("hey");
 
   var city = $("#city-type").val().toLowerCase();
   city = city.replace(/\s+/g, "");
@@ -45,4 +47,7 @@ function changeBG(event) {
 
 }
 
-$("#submit-btn").click(changeBG);
+console.log($("form"));
+
+$("form").submit(changeBG);
+// $("#submit-btn").click(changeBG);
