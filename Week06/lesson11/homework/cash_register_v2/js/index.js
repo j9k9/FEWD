@@ -32,6 +32,8 @@ function add (event){
 
     $("#total").hide().fadeIn(800);
 
+    $(".error-message").hide();
+
   };
 
 
