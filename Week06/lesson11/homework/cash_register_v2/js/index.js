@@ -2,7 +2,14 @@ var total = 0;
 total = parseFloat(total);
 
 
-$("#entry").submit(add);
+
+function currencyFormat (yoyo) {
+
+  return "&#36;" + yoyo.toFixed(2);
+
+};
+
+
 
 function add (event){
   // console.log("hi");
@@ -19,16 +26,18 @@ function add (event){
   }
   else {
 
-    entry = parseFloat(entry).toFixed(2);
+    entry = parseFloat(entry);
 
-    $("ul.list").append("<li>" + "&#36;" + entry + "</li>").children(":last").hide().fadeIn(800);;
+    $("ul.list").append("<li>"  + currencyFormat(entry) + "</li>").children(":last").hide().fadeIn(800);;
 
 
     $("#entry").hide().fadeIn(800);
 
-    total = +total + +entry;
+    total = total + entry;
 
-    $("#total").html(("&#36;" + total.toFixed(2)));
+
+
+    $("#total").html((currencyFormat(total)));
 
     $("#total").hide().fadeIn(800);
 
@@ -40,3 +49,5 @@ function add (event){
   $("#newEntry").val("");
 
 };
+
+$("#entry").submit(add);
