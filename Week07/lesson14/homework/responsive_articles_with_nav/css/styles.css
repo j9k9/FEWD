@@ -1,0 +1,229 @@
+/* Box Model Hack */
+* {
+ box-sizing: border-box;
+}
+
+/* Clearfix hack */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after{
+  clear: both;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  background-color: #F6F0E4;
+}
+
+/* Basic/Mobile Article Styling: */
+
+article {
+  padding: 20px;
+}
+
+h2 {
+  font-family: 'PT Serif', serif;
+  font-size: 2em;
+  margin: 20px 0;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+main {
+  margin: 0 auto;
+}
+
+header {
+  background-color: #7BAFA4;
+}
+
+nav {
+  width: 100%
+  padding-top: 60px;
+  padding-left: 10px;
+  padding-right: 10px;
+  clear: both;
+  overflow: hidden;
+}
+
+nav a:first-child{
+  border-top: 1px solid #F6F0E4;
+}
+
+nav a:last-child{
+  margin-bottom: 10px;
+}
+
+nav a {
+  border-bottom: 1px solid #F6F0E4;
+  text-decoration: none;
+  color: white;
+  display: block;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  margin: 0 auto;
+}
+
+nav a:focus, nav a:hover {
+  background-color: #488A7C;
+}
+
+.hamburger {
+  width: 40px;
+  height: 40px;
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.hamburger-line {
+  margin-top: 7px;
+  margin-bottom: 7px;
+  height: 3px;
+  background-color: white;
+}
+
+.hidden {
+  max-height: 0px;
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+   -moz-transition: all .5s ease-in-out;
+   -ms-transition: all .5s ease-in-out;
+   -o-transition: all .5s ease-in-out;
+}
+
+.show {
+  max-height: 400px;
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+   -moz-transition: all .5s ease-in-out;
+   -ms-transition: all .5s ease-in-out;
+   -o-transition: all .5s ease-in-out;
+}
+
+/* Responsive Article Styling: */
+
+@media (min-width: 480px) { /* mobile-landscape */
+  /* limit <main> to 440px and do necessary styling to match screenshot
+  Use classes and elements present in HTML as clues */
+  main {
+    max-width: 440px;
+  }
+
+  .left-aligned, .right-aligned {
+    width: 50%;
+  }
+
+  .left-aligned {
+    float: left;
+  }
+
+  .right-aligned {
+    float:right;
+  }
+
+  img {
+    padding-right: 20px;
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+
+
+}
+
+@media (min-width: 650px) { /* tablet-portrait */
+  /* limit <main> to 610px and do necessary styling to match screenshot
+  Re-stack image on top of text and use the font-size:0 "hack" to create a 2-column layout */
+  main {
+    max-width: 610px;
+    font-size: 0;
+  }
+
+  .right-aligned, .left-aligned {
+    width: 100%;
+    float: none;
+  }
+
+  article {
+    width: 50%;
+    display: inline-block;
+    font-size: 13px;
+    vertical-align: top;
+  }
+
+  h2 {
+    font-size: 2em;
+    margin: 20px 0;
+  }
+
+  header {
+    height: 60px;
+  }
+
+.hamburger {
+    display:none;
+  }
+
+  nav {
+    min-height: 40px;
+    margin-top: 10px;
+    font-size: 0;
+
+  }
+
+nav a {
+  display: inline-block;
+  width: auto;
+  padding: 10px;
+  border-bottom: 0px;
+  border-right: 1px solid #F6F0E4;
+  font-size: 13px;
+}
+
+nav a:first-child {
+  border-top: 0px;
+}
+
+nav a:last-child {
+  border-right: 0px;
+}
+
+
+
+}
+
+@media (min-width: 940px) { /* tablet-landscape/smaller laptops */
+  /* limit <main> to 900px and create a 3-column layout. Very minimal styling needed here,
+  as the CSS in the previous media-query does the heavy-lifting around creating a mult-column layout */
+  main {
+    max-width: 900px;
+  }
+
+  article {
+    width: 33.3%;
+  }
+}
+
+@media (min-width: 1220px) { /* laptops/desktops */
+  /* limit <main> to 1180px to create a wider 3-column layout */
+
+  main {
+    max-width: 1180px;
+  }
+}
