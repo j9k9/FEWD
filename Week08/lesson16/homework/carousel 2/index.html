@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Your description goes here">
+	<meta name="keywords" content="one, two, three">
+	<title>Animal Carousel</title>
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<header>
+		<nav>
+      <ul>
+      	<li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Your pic here!</a></li>
+          <li><a href="#">Contact Us</a></li>
+      </ul>
+   	</nav>
+	</header>
+	<div id="container">
+		<img id="currentImage" src="images/animals/animal1.jpg">
+		<div id="text1" class="hidden description show">
+			<h1>
+				Horse
+			</h1>
+			<p>
+			The horse (Equus ferus caballus) is one of two extant subspecies of Equus ferus. It is an odd-toed ungulate mammal belonging to the taxonomic family Equidae.
+			</p>
+		</div>
+
+		<div id="text2" class="hidden description">
+			<h1>
+				Pig
+			</h1>
+			<p>
+				A pig is any of the animals in the genus Sus, within the Suidae family of even-toed ungulates. Pigs are highly social and intelligent animals.
+			</p>
+		</div>
+
+		<div id="text3" class="hidden description">
+			<h1>
+				Rhino
+			</h1>
+			<p>
+				A rhinoceros (meaning 'nose horn'), often abbreviated to rhino, is one of any five extant species of odd-toed ungulates in the family Rhinocerotidae, as well as any of the numerous extinct species. Two of these extant species are native to Africa and three to Southern Asia.
+			</p>
+		</div>
+
+		<div id="text4" class="hidden description">
+			<h1>
+				Giraffe
+			</h1>
+			<p>
+				The giraffe (Giraffa camelopardalis) is an African even-toed ungulate mammal, the tallest living terrestrial animal and the largest ruminant. Its species name refers to its camel-like shape and its leopard-like colouring.
+			</p>
+		</div>
+
+		<div id="text5" class="hidden description">
+			<h1>
+				Gorillas
+			</h1>
+			<p>
+				Gorillas are ground-dwelling, predominantly herbivorous apes that inhabit the forests of central Africa. They are the largest living primates.
+			</p>
+		</div>
+
+		<div id="text6" class="hidden description">
+			<h1>
+				Snake
+			</h1>
+			<p>
+				Snakes are elongated, legless, carnivorous reptiles of the suborder Serpentes that can be distinguished from legless lizards by their lack of eyelids and external ears.
+			</p>
+		</div>
+
+		<div id="buttons-wrapper">
+			<form>
+				<input type="button" class="hidden btn" id="back" value="Back">
+				<input type="button" class="btn" id="forward" value="Forward">
+			</form>
+		</div>
+	</div>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>
